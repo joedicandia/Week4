@@ -1,5 +1,29 @@
-# Part 1: Identify samples with diameter between 20 and 30 mm inclusive and have had their genomes sequenced by executing the copyExomes.sh script. This will make a new directory called exomes and will provide the user with the file names to be copied from /home/rbif/week4/exomes. Copy the identified files using cp /home/rbif/week4/exomes destination.
+# Run ./copyExomes.sh clinical_data.txt and this will output the names of the files that need to be copied over from /home/rbif/week4/exomes.
 
-# Part 2: Identify the three highest occuring motifs in each exome by executing the createCrisprReady.sh script and passing motif_list.txt as the first argument. This will create a new file for each exome in the exomes folder that contains the top three motifs in the corresponding exome.
+# Copy each file to the new exomes folder by using cp /home/rbif/week4/exomes/file.fasta ./exomes
 
-# Part 3:
+# Next, from the weekk4 directory, run ./createCrisprReady.sh motif_list.txt and this will create a file for each exome titled "exome_topmotifs.txt" in the exomes directory.
+
+# Copy the linearize.sh script to the exomes folder using cp linearize.sh ./exomes
+
+# NOTE: I attempted to assign the top three motifs to a variable so that I could call that variable in the next script; however, I was unable and so I manually wrote in the motifs into the linearize.sh script.
+
+# Cd into the exomes folder. Run ./linearize.sh on each fasta file with the file name as the first and only argument (for example, ./linearize.sh chicken.fasta). This will output each exome to the exomeslinear directory.
+
+# Cd back to the week4 directory.
+
+# Copy the identifyCrisprSite.sh script to the exomeslinear directory using cp identifyCrisprSite.sh ./exomeslinear
+
+# Cd into the exomeslinear directory.
+
+# Run ./identifyCrisprSite.sh with no arguments. This will search for only genes with NGG and 20 bases upstream and output each file to the exomesprecrispr directory. The script will name each file as "exomename_precrispr.fasta"
+
+# Cd back to the week4 directory.
+
+# Copy the editGenome.sh script to the exomesprecrispr directory using cp editGenome.sh ./exomesprecrispr.
+
+# Cd into the exomesprecrispr directory
+
+# Run ./editGenome.sh with no arguments. This will insert the letter A right before the NGG site in each file in the exomesprecrispr directory and output the results of each run to a file in the exomespostcrispr directory. The script will name each file as "exomename_postcrispr.fasta." 
+
+# Run python exomeReport.py for a summary of the findings.
