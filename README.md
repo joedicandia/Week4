@@ -1,6 +1,6 @@
 # Run ./copyExomes.sh clinical_data.txt and this will output the names of the files that need to be copied over from /home/rbif/week4/exomes.
 
-# Copy each file to the new exomes folder by using cp /home/rbif/week4/exomes/file.fasta ./exomes
+# Copy each of the outputted files to the new exomes folder by using cp /home/rbif/week4/exomes/file.fasta ./exomes
 
 # Next, from the week4 directory, run ./createCrisprReady.sh motif_list.txt and this will create a file for each exome titled "exome_topmotifs.txt" in the exomes directory.
 
@@ -8,7 +8,7 @@
 
 # NOTE: I attempted to assign the top three motifs to a variable so that I could call that variable in the next script; however, I was unable and so I manually wrote in the motifs into the linearize.sh script.
 
-# Cd into the exomes folder. Run ./linearize.sh on each fasta file with the file name as the first and only argument (for example, ./linearize.sh chicken.fasta). This will output each exome to the exomeslinear directory.
+# Cd into the exomes folder. Run ./linearize.sh on each fasta file with the file name as the first and only argument (for example, ./linearize.sh chicken.fasta). This will output each exome, now with gene headers containingthe top three motifs and their counts to the exomeslinear directory.
 
 # Cd back to the week4 directory.
 
