@@ -3,17 +3,17 @@
 
 # Steps:
 
-# Run ./copyExomes.sh clinical_data.txt and this will output the names of the files that need to be copied over from /home/rbif/week4/exomes.
+# Run the ./copyExomes.sh script with  clinical_data.txt as the first and only argument (for example: ./copyExomes.sh clinical_data.txt) and this will output the names of the files that need to be copied over from /home/rbif/week4/exomes.
 
 # Copy each of the outputted files to the new exomes folder by using cp /home/rbif/week4/exomes/file.fasta ./exomes
 
-# Next, from the week4 directory, run ./createCrisprReady.sh motif_list.txt and this will create a file for each exome titled "exome_topmotifs.txt" in the exomes directory.
+# Next, from the week4 directory, run the ./createCrisprReady.sh script with motif_list.txt as the first and only argument (for example: ./createCrisprReady.sh motif_list) and this will create a file for each exome titled "exome_topmotifs.txt" in the exomes directory.
 
 # Copy the linearize.sh script to the exomes folder using cp linearize.sh ./exomes
 
-# NOTE: I attempted to assign the top three motifs to a variable so that I could call that variable in the next script; however, I was unable and so I manually wrote in the motifs into the linearize.sh script.
+# NOTE: I attempted to assign the top three motifs to a variable so that I could call that variable in the next script; however, I was unable and so I manually wrote in the motifs into the linearize.sh script. I struggled this week in general with passing variables from one script to another with stdin/stdout instances.
 
-# Cd into the exomes folder. Run ./linearize.sh on each fasta file with the file name as the first and only argument (for example, ./linearize.sh chicken.fasta). This will output each exome, now with gene headers containingthe top three motifs and their counts to the exomeslinear directory.
+# Cd into the exomes folder. Run ./linearize.sh on each fasta file with the file name as the first and only argument (for example: ./linearize.sh chicken.fasta). This will output each exome, now with gene headers containing the top three motifs and their counts to the exomeslinear directory.
 
 # Cd back to the week4 directory.
 
