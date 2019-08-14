@@ -2,7 +2,7 @@
 
 # Copy each file to the new exomes folder by using cp /home/rbif/week4/exomes/file.fasta ./exomes
 
-# Next, from the weekk4 directory, run ./createCrisprReady.sh motif_list.txt and this will create a file for each exome titled "exome_topmotifs.txt" in the exomes directory.
+# Next, from the week4 directory, run ./createCrisprReady.sh motif_list.txt and this will create a file for each exome titled "exome_topmotifs.txt" in the exomes directory.
 
 # Copy the linearize.sh script to the exomes folder using cp linearize.sh ./exomes
 
