@@ -1,3 +1,8 @@
+# Author: Joe DiCandia
+# Purpose: identify a list of suitable CRISPR gene candidates.
+
+# Steps:
+
 # Run ./copyExomes.sh clinical_data.txt and this will output the names of the files that need to be copied over from /home/rbif/week4/exomes.
 
 # Copy each of the outputted files to the new exomes folder by using cp /home/rbif/week4/exomes/file.fasta ./exomes
